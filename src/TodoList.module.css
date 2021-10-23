@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+    height: 100vh;
+    display: grid;
+    justify-content:center;
+    align-items:start;
+    font-size: 1.2rem;
+    background-color: #5ba6f1;
+
+}
+
+.form{
+    position:relative;
+    width:20rem;
+    height: 3rem;
+}
+
+.form__input{
+    position:absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e1e5ee;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    padding:1.25rem;
+    background:none;
+}
+
+.form__output{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e1e5ee;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    padding:1.25rem;
+    background:none;
+}
+
+.form__input:hover, .form__output:hover{
+border-color: #adffff;
+}
+
+
+.form__input:focus, .form__output:focus{
+border-color: #18ffff;
+}
+
+
+.form__label{
+    position:absolute;
+    left: 1rem;
+    top: 0.1rem;
+    padding: 0.2rem;
+    color: salmon;
+    transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+    background-color: #060b23; 
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus)
+~.form__label
+{
+    top: 1rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+    /* font-size: 15px; */
+}
+
+.form__button{
+    position:absolute;
+    left: 21rem;
+    top: 2.5rem;
+}
+
+
+.form__ul{
+    margin-top:5rem;
+    list-style-type: none;
+}
+
+
+.form__span{
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+b{
+    color: rgba(248, 248, 248, 0.966);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.form_button1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
